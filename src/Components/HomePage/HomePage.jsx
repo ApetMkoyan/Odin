@@ -58,7 +58,7 @@ function HomePage() {
                         <button onClick={() => window.open('https://jup.ag/swap/SOL-odinyvt9FgWWxw9BwZFjf7Agcch6Pk9mKubszw4izAG', '_blank')}>
                             BUY $ODIN
                         </button>
-                        <button onClick={() => window.open('https://start-bot.com', '_blank')}>
+                        <button onClick={() => window.open('https://t.me/odin_tools_bot', '_blank')}>
                             START BOT
                         </button>
                         <button className='Copy-btn' onClick={copyToClipboard}>
@@ -86,9 +86,9 @@ function HomePage() {
                         <p>CA:</p>
                         <p>odinyvt9FgWWxw9BwZFjf7Agcch6Pk9mKubszw4izAG</p>
                     </div>
-                </div>
+                </div >
                 <img className='odin' src={odinboss} alt="Odin Boss" />
-            </main>
+            </main >
             <section ref={aboutRef} className="about-section">
                 <AboutPage />
             </section>
@@ -105,7 +105,7 @@ function HomePage() {
             <section className='faq-section'>
                 <FaqPage />
             </section>
-        </div>
+        </div >
     );
 }
 
