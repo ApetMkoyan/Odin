@@ -11,17 +11,28 @@ import BotsPage from '../BotsPage/botsPage'
 import TokenPage from '../TocenPage/TokenPage'
 import RoadMap from '../RoadMapPage/RoadMap'
 import FaqPage from '../FaqPage/faqPage'
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 
 function HomePage() {
     const aboutRef = useRef(null);
     const tokenRef = useRef(null);
     const roadmapRef = useRef(null);
     const botRef = useRef(null);
+    const [copied, setCopied] = useState(false);
 
     const scrollToSection = (ref) => {
         ref.current.scrollIntoView({ behavior: 'smooth' });
     };
+
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText("odinyvt9FgWWxw9BwZFjf7Agcch6Pk9mKubszw4izAG");
+        setCopied(true);
+        setTimeout(() => {
+            setCopied(false);
+        }, 2000)
+    }
+
+
     return (
         <div className="home-page">
             <div className='odindiv'>
@@ -50,9 +61,14 @@ function HomePage() {
                         <button onClick={() => window.open('https://start-bot.com', '_blank')}>
                             START BOT
                         </button>
-                        <button onClick={() => navigator.clipboard.writeText('Your Contract Address')}>
+                        <button className='Copy-btn' onClick={copyToClipboard}>
                             COPY CA
                         </button>
+                        {copied && (
+                            <div className='alert'>
+                                Contract Address copied!
+                            </div>
+                        )}
                     </div>
 
                     <div className="social-links">

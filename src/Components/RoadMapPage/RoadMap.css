@@ -10,7 +10,7 @@
 
 .roadback {
     width: 100%;
-    height: auto;
+    height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     position: absolute;
@@ -54,28 +54,33 @@
     top: 0%;
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
+    align-items: flex-start;
+    width: 90%;
     gap: 2rem;
     background: transparent;
     z-index: 1;
+    padding-left: 15%;
+    padding-right: 15%;
 
 }
 
 .roadmap-item {
+    flex: 1;
     width: 20%;
-    padding: 20px;
+    height: 100%;
     border-radius: 8px;
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3);
+    align-items: flex-start;
+    flex-wrap: wrap;
     background: transparent;
 
 }
 
 .roadmap-item h3 {
-    font-size: 94px;
+    height: 20%;
+    font-size: 80px;
     font-weight: 600;
     color: #ffffff;
     font-weight: 400;
@@ -89,11 +94,10 @@
 }
 
 .roadmap-item img {
-    width: 60%;
-    height: auto;
+    width: 70%;
+    left: 25%;
     border-radius: 4px;
     position: relative;
-    left: 25%;
     background: transparent;
 
 }
@@ -106,10 +110,10 @@
 }
 
 .roadmap-item ul {
+    max-height: 100%;
+    overflow: hidden;
+    line-height: 30px;
     position: relative;
-    bottom: 10%;
-    padding: 0;
-    margin: 0;
     text-align: left;
     background: transparent;
 
@@ -126,6 +130,7 @@
 }
 
 
+
 @media (min-width: 1067px) and (max-width: 1820px) {
 
     .roadmap-item ul li {
@@ -133,11 +138,7 @@
 
     }
 
-    .roadmap-item img {
-        position: relative;
-        width: 50%;
-        left: 25%;
-    }
+
 
     .roadmap-item h3 {
         font-size: 30px;
@@ -180,13 +181,6 @@
 
     }
 
-    .roadmap-item img {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: -10%;
-    }
-
     .roadmap-item h3 {
         font-size: 20px;
     }
@@ -201,7 +195,9 @@
         background: linear-gradient(180deg, #000000 10.2%, rgba(1, 1, 1, 0) 100%);
     }
 
-
+    .roadmap-item ul {
+        line-height: 14px;  
+    }
 
     .headerr h1 {
         z-index: 5;
@@ -224,29 +220,21 @@
 @media (max-width: 480px) {
 
     .roadmap-item ul li {
-        font-size: 11px;
+        font-size: 10px;
         width: 100%;
-        line-height: 15px;
-    }
-
-    .roadmap-item img {
-        position: relative;
-        width: 100%;
-        left: 10%;
-        top: 0%;
     }
 
     .roadmap-items {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        flex-direction: row;
+
         gap: 0.1rem;
         z-index: 1;
 
 
     }
-
+ 
+    .roadmap-item ul {
+        line-height: 12px;  
+    }
     .roadmap-item h3 {
         position: relative;
         font-size: 20px;
@@ -289,12 +277,6 @@
 
     }
 
-    .roadmap-item img {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: -10%;
-    }
 
     .roadmap-item h3 {
         font-size: 35px;
@@ -334,25 +316,12 @@
 
     }
 
-    .roadback {
-        height: 100%;
-    }
-
-    .roadmap-item img {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: -10%;
-    }
-
     .roadmap-item h3 {
         font-size: 40px;
     }
 
     .roadmap-item {
-        position: relative;
-        top: 1%;
-        width: 25%;
+        max-height: 100%;
     }
 
     .gradient {
@@ -384,15 +353,12 @@
         height: 100%;
     }
 
-    .roadmap-item img {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: -10%;
-    }
-
     .roadmap-item h3 {
         font-size: 40px;
+    }
+       .roadmap-item ul {
+        line-height: 40px;
+ 
     }
 
     .roadmap-item {
@@ -420,7 +386,10 @@
 }
 
 @media (min-width: 1921px) {
-
+    .roadmap-item ul {
+        line-height: 50px;
+ 
+    }
     .roadmap-item ul li {
         font-size: 35px;
 
@@ -430,12 +399,6 @@
         height: 100%;
     }
 
-    .roadmap-item img {
-        position: relative;
-        width: 80%;
-        left: 10%;
-        top: -10%;
-    }
 
     .roadmap-item h3 {
         font-size: 40px;
@@ -460,7 +423,6 @@
         font-weight: 500;
 
     }
-
     .headerr {
         position: relative;
         top: 0%;

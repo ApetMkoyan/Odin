@@ -1,9 +1,5 @@
 .bots {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    padding-left: 17%;
-    padding-top: 5%;
+    padding: 5%;
     background-image: url(../../Utilities/botsback.png);
     background-repeat: no-repeat;
     background-position: bottom;
@@ -25,24 +21,16 @@
 }
 
 .bot-card {
-    height: 10%;
-    border-radius: 8px;
-    width: 33.3%;
-    padding: 20px;
     box-sizing: border-box;
     text-align: center;
     background: transparent;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-left: 2%;
-    margin-bottom: 20px;
+ 
 }
 
 .bot-card img {
-    width: 100%;
-    height: 50%;
-    max-height: auto;
+    width: 80%;
     object-fit: cover;
-    border-radius: 4px;
     margin-bottom: 10px;
     background: transparent;
 }
@@ -60,7 +48,10 @@
 }
 
 .bot-card p {
+    width: 50%;
+    height: 30%;
     position: relative;
+    left: 25%;
     top: -10%;
     font-family: 'Macondo';
     font-size: 16px;
@@ -90,13 +81,8 @@
 
 .botcontrol {
     position: relative;
-    width: 60%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     background-color: transparent;
 
 }
@@ -109,21 +95,9 @@
 }
 
 
-.botcontrol:last-child {
-    justify-content: flex-start;
-}
 
 
 @media (min-width: 1067px) and (max-width: 1820px) {
-    .botcontrol {
-        width: 100%;
-        left: -10%;
-    }
-
-    .bot-card {
-        width: 30.3%;
-    }
-
     .bot-card p {
         font-size: 16px;
         line-height: 30px;
@@ -140,28 +114,13 @@
         font-size: 15px;
         text-align: center;
     }
-
-    .bot-card img {
-        width: 60%;
-    }
 }
 
 @media (max-width: 480px) {
-
-    .botcontrol {
-        width: 100%;
-        left: -8%;
-    }
-
-    .bot-card {
-        width: 31%;
-        padding: 10px;
-
-    }
-
     .bot-card p {
         font-size: 12px;
         line-height: 15px;
+        height: 50%;
     }
 
     .bot-card h3 {
@@ -174,10 +133,6 @@
         height: 30px;
         font-size: 11px;
         text-align: center;
-    }
-
-    .bot-card img {
-        width: 100%;
     }
 
     .bot-card h5 {
@@ -195,22 +150,14 @@
 
 @media (min-width: 481px) and (max-width: 768px) {
 
-    .botcontrol {
-        width: 100%;
-        left: -8%;
-    }
-
-    .bot-card {
-        width: 31.3%;
-    }
-
     .bot-card p {
-        font-size: 13px;
+        font-size: 15px;
         line-height: 21px;
+        height: 40%;
     }
 
     .bot-card h3 {
-        font-size: 15px;
+        font-size: 17px;
     }
 
     .bot-card button {
@@ -219,10 +166,6 @@
         height: 30px;
         font-size: 11px;
         text-align: center;
-    }
-
-    .bot-card img {
-        width: 100%;
     }
 
     .bot-card h5 {
@@ -235,25 +178,11 @@
 
 @media (min-width: 769px) and (max-width: 1024px) {
 
-    .botcontrol {
-        width: 100%;
-        left: -10%;
-        display: flex;
-        justify-content: start;
-        align-items: start;
-    }
-
-    .botcontrol :nth-child(2) {
-        line-height: 30px;
-    }
-
-    .bot-card {
-        width: 30.5%;
-    }
 
     .bot-card p {
-        font-size: 18px;
+        font-size: 20px;
         line-height: 25px;
+        height: 35%;
     }
 
     .bot-card h3 {
@@ -268,10 +197,6 @@
         text-align: center;
     }
 
-    .bot-card img {
-        width: 100%;
-    }
-
     .bot-card h5 {
         font-size: 30px;
         background: transparent;
@@ -281,18 +206,10 @@
 
 @media (min-width: 1024px) and (max-width: 1366px) {
 
-    .botcontrol {
-        width: 100%;
-        left: -10%;
-    }
-
-    .bot-card {
-        width: 30.3%;
-    }
-
     .bot-card p {
         font-size: 26px;
         line-height: 30px;
+        height: 35%;
     }
 
     .bot-card h3 {
@@ -303,26 +220,13 @@
         padding: 0%;
         width: 150px;
         height: 50px;
-        font-size: 25px;
+        font-size: 20px;
         text-align: center;
-    }
-
-    .bot-card img {
-        width: 100%;
     }
 
 }
 
 @media (min-width: 1367px) and (max-width: 1920px) {
-
-    .botcontrol {
-        width: 100%;
-        left: -5%;
-    }
-
-    .bot-card {
-        width: 27.3%;
-    }
 
     .bot-card p {
         font-size: 26px;
@@ -335,25 +239,13 @@
 
     .bot-card button {
         width: 150px;
+        height: 50px;
         font-size: 20px;
-    }
-
-    .bot-card img {
-        width: 70%;
     }
 
 }
 
 @media (min-width: 1921px) {
-
-    .botcontrol {
-        width: 100%;
-        left: -5%;
-    }
-
-    .bot-card {
-        width: 27.3%;
-    }
 
     .bot-card p {
         font-size: 36px;
@@ -377,9 +269,4 @@
         font-size: 30px;
         text-align: center;
     }
-
-    .bot-card img {
-        width: 70%;
-    }
-
 }
