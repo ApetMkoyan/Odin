@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/static/css/main.46cebc34.css",
+    "main.css": "/static/css/main.1604b0bd.css",
     "main.js": "/static/js/main.0a5df2e8.js",
     "static/media/roadmapback.png": "/static/media/roadmapback.f040e120bf035911d049.png",
     "static/media/odinboss.png": "/static/media/odinboss.0ff9782e73b13d30e1fc.png",
@@ -18,11 +18,11 @@
     "static/media/tokenodin1.png": "/static/media/tokenodin1.8d896a2b78aae6e4c488.png",
     "static/media/Macondo-Regular.ttf": "/static/media/Macondo-Regular.0f91bbd01192421b9786.ttf",
     "index.html": "/index.html",
-    "main.46cebc34.css.map": "/static/css/main.46cebc34.css.map",
+    "main.1604b0bd.css.map": "/static/css/main.1604b0bd.css.map",
     "main.0a5df2e8.js.map": "/static/js/main.0a5df2e8.js.map"
   },
   "entrypoints": [
-    "static/css/main.46cebc34.css",
+    "static/css/main.1604b0bd.css",
     "static/js/main.0a5df2e8.js"
   ]
 }
