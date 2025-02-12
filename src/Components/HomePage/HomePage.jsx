@@ -28,11 +28,12 @@ function HomePage() {
                 <img className='odinBoss' src={odinback} />
             </div>
             <header className="header">
-            <img src={HomePage1} alt="Home Page Icon" />
                 <button onClick={() => scrollToSection(aboutRef)}>About</button>
                 <button onClick={() => scrollToSection(tokenRef)}>Tokenomics</button>
                 <button onClick={() => scrollToSection(roadmapRef)}>Roadmap</button>
                 <button onClick={() => scrollToSection(botRef)}>Bots</button>
+                <img src={HomePage1} alt="Home Page Icon" />
+
             </header>
             <main className="body">
                 <div className='bodycontrol'>
