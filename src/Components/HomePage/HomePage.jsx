@@ -28,9 +28,9 @@ function HomePage() {
                 <img className='odinBoss' src={odinback} />
             </div>
             <header className="header">
+            <img src={HomePage1} alt="Home Page Icon" />
                 <button onClick={() => scrollToSection(aboutRef)}>About</button>
                 <button onClick={() => scrollToSection(tokenRef)}>Tokenomics</button>
-                <img src={HomePage1} alt="Home Page Icon" />
                 <button onClick={() => scrollToSection(roadmapRef)}>Roadmap</button>
                 <button onClick={() => scrollToSection(botRef)}>Bots</button>
             </header>
